@@ -1,0 +1,146 @@
+int bluePin = 13;
+int S = 300;
+int O = 800;
+int redPin = 10; //five times fast
+int redPaceActive = 150;
+int redPaceInactive = 100;
+int greenPin = 7; //10 times slow
+int greenPaceActive = 1200;
+int greenPaceInactive = 800;
+float Pi = 3.14;
+int pause = 1500;
+
+void setup() {
+  pinMode(bluePin, OUTPUT);
+  pinMode(redPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+
+}
+
+void loop() {
+  //red
+  digitalWrite(redPin, HIGH);
+  delay(redPaceActive);
+  digitalWrite(redPin, LOW);
+  delay(redPaceInactive);
+  //---
+  digitalWrite(redPin, HIGH);
+  delay(redPaceActive);
+  digitalWrite(redPin, LOW);
+  delay(redPaceInactive);
+  //---
+  digitalWrite(redPin, HIGH);
+  delay(redPaceActive);
+  digitalWrite(redPin, LOW);
+  delay(redPaceInactive);
+  //---
+  digitalWrite(redPin, HIGH);
+  delay(redPaceActive);
+  digitalWrite(redPin, LOW);
+  delay(redPaceInactive);
+  //---
+  digitalWrite(redPin, HIGH);
+  delay(redPaceActive);
+  digitalWrite(redPin, LOW);
+  delay(pause);
+  //---
+
+  //green
+  digitalWrite(greenPin, HIGH);
+  delay(greenPaceActive);
+  digitalWrite(greenPin, LOW);
+  delay(greenPaceInactive);
+  //---  
+  digitalWrite(greenPin, HIGH);
+  delay(greenPaceActive);
+  digitalWrite(greenPin, LOW);
+  delay(greenPaceInactive);
+  //---
+  digitalWrite(greenPin, HIGH);
+  delay(greenPaceActive);
+  digitalWrite(greenPin, LOW);
+  delay(greenPaceInactive);
+  //---  
+  digitalWrite(greenPin, HIGH);
+  delay(greenPaceActive);
+  digitalWrite(greenPin, LOW);
+  delay(greenPaceInactive);
+  //---
+  digitalWrite(greenPin, HIGH);
+  delay(greenPaceActive);
+  digitalWrite(greenPin, LOW);
+  delay(greenPaceInactive);
+  //---  
+  digitalWrite(greenPin, HIGH);
+  delay(greenPaceActive);
+  digitalWrite(greenPin, LOW);
+  delay(greenPaceInactive);
+  //---
+  digitalWrite(greenPin, HIGH);
+  delay(greenPaceActive);
+  digitalWrite(greenPin, LOW);
+  delay(greenPaceInactive);
+  //---  
+  digitalWrite(greenPin, HIGH);
+  delay(greenPaceActive);
+  digitalWrite(greenPin, LOW);
+  delay(greenPaceInactive);
+  //---
+  digitalWrite(greenPin, HIGH);
+  delay(greenPaceActive);
+  digitalWrite(greenPin, LOW);
+  delay(greenPaceInactive);
+  //---  
+  digitalWrite(greenPin, HIGH);
+  delay(greenPaceActive);
+  digitalWrite(greenPin, LOW);
+  delay(pause);
+  //-----
+
+  //blue
+  digitalWrite(bluePin,HIGH);
+  delay(S);
+  digitalWrite(bluePin, LOW);
+  delay(S);
+  //---
+  digitalWrite(bluePin,HIGH);
+  delay(S);
+  digitalWrite(bluePin, LOW);
+  delay(S);
+  //---
+  digitalWrite(bluePin,HIGH);
+  delay(S);
+  digitalWrite(bluePin, LOW);
+  delay(S);
+  //------
+  digitalWrite(bluePin,HIGH);
+  delay(O);
+  digitalWrite(bluePin, LOW);
+  delay(O);
+  //---
+  digitalWrite(bluePin,HIGH);
+  delay(O);
+  digitalWrite(bluePin, LOW);
+  delay(O);
+  //---
+  digitalWrite(bluePin,HIGH);
+  delay(O);
+  digitalWrite(bluePin, LOW);
+  delay(O);
+  //------
+    digitalWrite(bluePin,HIGH);
+  delay(S);
+  digitalWrite(bluePin, LOW);
+  delay(S);
+  //---
+  digitalWrite(bluePin,HIGH);
+  delay(S);
+  digitalWrite(bluePin, LOW);
+  delay(S);
+  //---
+  digitalWrite(bluePin,HIGH);
+  delay(S);
+  digitalWrite(bluePin, LOW);
+  delay(pause);
+  //------
+}
