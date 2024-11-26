@@ -5,7 +5,8 @@ int bit4Pin = 4;  //white
 
 int shortActive = 200;
 int shortInactive = 200;
-//----short = 400;
+//---
+int mediumActive = 400;
 int mediumInactive = 400;
 //----
 int longActive = 600;
@@ -31,12 +32,14 @@ void loop() {
     digitalWrite(bit2Pin, LOW);
     digitalWrite(bit3Pin, LOW);
     digitalWrite(bit4Pin, LOW);
+  delay(longInactive);
   //represent number 1
     digitalWrite(bit1Pin, HIGH);
     delay(shortActive);
     digitalWrite(bit2Pin, LOW);
     digitalWrite(bit3Pin, LOW);
     digitalWrite(bit4Pin, LOW);
+  delay(longInactive);
   //represent number 2
     digitalWrite(bit1Pin, LOW);
     delay(shortActive);
@@ -44,71 +47,114 @@ void loop() {
     delay(shortActive);
     digitalWrite(bit3Pin, LOW);
     digitalWrite(bit4Pin, LOW);
+  delay(longInactive);
   //represent number 3
     digitalWrite(bit1Pin, HIGH);
     delay(shortActive);
     digitalWrite(bit2Pin,HIGH);
+    delay(shortActive);
     digitalWrite(bit3Pin, LOW);
     digitalWrite(bit4Pin, LOW);
+  delay(longInactive);
   //represent number 4
   digitalWrite(bit1Pin, LOW);
   digitalWrite(bit2Pin, LOW);
   digitalWrite(bit3Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit4Pin, LOW);
   delay(shortActive);
+  delay(longInactive);
   //represent number 5
   digitalWrite(bit1Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit2Pin, LOW);
   digitalWrite(bit3Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit4Pin, LOW);
+  delay(longInactive);
   //represent number 6
   digitalWrite(bit1Pin, LOW);
   digitalWrite(bit2Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit3Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit4Pin, LOW);
+  delay(longInactive);
   //represent number 7
   digitalWrite(bit1Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit2Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit3Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit4Pin, LOW);
+  delay(longInactive);
   //represent number 8
   digitalWrite(bit1Pin, LOW);
   digitalWrite(bit2Pin, LOW);
   digitalWrite(bit3Pin, LOW);
   digitalWrite(bit4Pin, HIGH);
+  delay(shortActive);
+  delay(longInactive);
   //represent number 9
   digitalWrite(bit1Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit2Pin, LOW);
   digitalWrite(bit3Pin, LOW);
   digitalWrite(bit4Pin, HIGH);
+  delay(shortActive);
+  delay(longInactive);
   //represent number 10
   digitalWrite(bit1Pin, LOW);
   digitalWrite(bit2Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit3Pin, LOW);
   digitalWrite(bit4Pin, HIGH);
+  delay(shortActive);
+  delay(longInactive);
   //represent number 11
   digitalWrite(bit1Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit2Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit3Pin, LOW);
   digitalWrite(bit4Pin, HIGH);
+  delay(shortActive);
+  delay(longInactive);
   //represent number 12
   digitalWrite(bit1Pin, LOW);
   digitalWrite(bit2Pin, LOW);
   digitalWrite(bit3Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit4Pin, HIGH);
+  delay(shortActive);
+  delay(longInactive);
   //represent number 13
   digitalWrite(bit1Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit2Pin, LOW);
   digitalWrite(bit3Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit4Pin, HIGH);
+  delay(shortActive);
+  delay(longInactive);
   //represent number 14
   digitalWrite(bit1Pin, LOW);
   digitalWrite(bit2Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit3Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit4Pin, HIGH);
+  delay(shortActive);
+  delay(longInactive);
   //represent number 15
   digitalWrite(bit1Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit2Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit3Pin, HIGH);
+  delay(shortActive);
   digitalWrite(bit4Pin, HIGH);
+  delay(longInactive);
+
 }
