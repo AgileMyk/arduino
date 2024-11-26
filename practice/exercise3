@@ -35,24 +35,19 @@ void loop() {
   delay(longInactive);
   //represent number 1
     digitalWrite(bit1Pin, HIGH);
-    delay(shortActive);
     digitalWrite(bit2Pin, LOW);
     digitalWrite(bit3Pin, LOW);
     digitalWrite(bit4Pin, LOW);
   delay(longInactive);
   //represent number 2
     digitalWrite(bit1Pin, LOW);
-    delay(shortActive);
     digitalWrite(bit2Pin, HIGH);
-    delay(shortActive);
     digitalWrite(bit3Pin, LOW);
     digitalWrite(bit4Pin, LOW);
   delay(longInactive);
   //represent number 3
     digitalWrite(bit1Pin, HIGH);
-    delay(shortActive);
     digitalWrite(bit2Pin,HIGH);
-    delay(shortActive);
     digitalWrite(bit3Pin, LOW);
     digitalWrite(bit4Pin, LOW);
   delay(longInactive);
