@@ -1,0 +1,115 @@
+/*
+Simulate a 4-bit number range. Using the necessary variables, work through all the values that may be represented when you have a 4-bit range of values
+SUCH THAT
+the red light will be used whenever the value 1 is required to reach a total
+the blue light will be used whenever the value 2 is required to reach a total
+the green light will be used whenever the value 3 is required to reach a total
+the red light will be used whenever the value 4 is required to reach a total
+
+--> 0 results from 4 LOWS, 16 results from 4 HIGHS, etc.
+*/
+
+int bit1Pin = 0;  //red
+int bit2Pin = 2;  //blue
+int bit3Pin = 3;  //green
+int bit4Pin = 4;  //white
+
+int shortActive = 200;
+int shortInactive = 200;
+//----short = 400;
+int mediumInactive = 400;
+//----
+int longActive = 600;
+int longInactive = 600;
+//----
+int longestActive = 800;
+int longestInactive = 800;
+//----
+
+void setup() {
+  pinMode(bit1Pin, OUTPUT);
+  pinMode(bit2Pin, OUTPUT);
+  pinMode(bit3Pin, OUTPUT);
+  pinMode(bit4Pin, OUTPUT);
+
+}
+
+
+//blinking through this light series will represent the 16 values possibly expressed using a 4-bit binary scheme
+void loop() {
+  //represent number 0
+    digitalWrite(bit1Pin, LOW);
+  //represent number 1
+    digitalWrite(bit1Pin, HIGH);
+    delay(shortActive);
+  //represent number 2
+    digitalWrite(bit1Pin, LOW);
+    delay(shortActive);
+    digitalWrite(bit2Pin, HIGH);
+    delay(shortActive);
+  //represent number 3
+    digitalWrite(bit1Pin, HIGH);
+    delay(shortActive);
+    digitalWrite(bit2Pin,HIGH);
+  //represent number 4
+  digitalWrite(bit1Pin, LOW);
+  digitalWrite(bit2Pin, LOW);
+  digitalWrite(bit3Pin, HIGH);
+  digitalWrite(bit4Pin, LOW);
+  delay(shortActive);
+  //represent number 5
+  digitalWrite(bit1Pin, HIGH);
+  digitalWrite(bit2Pin, LOW);
+  digitalWrite(bit3Pin, HIGH);
+  digitalWrite(bit4Pin, LOW);
+  //represent number 6
+  digitalWrite(bit1Pin, LOW);
+  digitalWrite(bit2Pin, HIGH);
+  digitalWrite(bit3Pin, HIGH);
+  digitalWrite(bit4Pin, LOW);
+  //represent number 7
+  digitalWrite(bit1Pin, HIGH);
+  digitalWrite(bit2Pin, HIGH);
+  digitalWrite(bit3Pin, HIGH);
+  digitalWrite(bit4Pin, LOW);
+  //represent number 8
+  digitalWrite(bit1Pin, LOW);
+  digitalWrite(bit2Pin, LOW);
+  digitalWrite(bit3Pin, LOW);
+  digitalWrite(bit4Pin, HIGH);
+  //represent number 9
+  digitalWrite(bit1Pin, HIGH);
+  digitalWrite(bit2Pin, LOW);
+  digitalWrite(bit3Pin, LOW);
+  digitalWrite(bit4Pin, HIGH);
+  //represent number 10
+  digitalWrite(bit1Pin, LOW);
+  digitalWrite(bit2Pin, HIGH);
+  digitalWrite(bit3Pin, LOW);
+  digitalWrite(bit4Pin, HIGH);
+  //represent number 11
+  digitalWrite(bit1Pin, HIGH);
+  digitalWrite(bit2Pin, HIGH);
+  digitalWrite(bit3Pin, LOW);
+  digitalWrite(bit4Pin, HIGH);
+  //represent number 12
+  digitalWrite(bit1Pin, LOW);
+  digitalWrite(bit2Pin, LOW);
+  digitalWrite(bit3Pin, HIGH);
+  digitalWrite(bit4Pin, HIGH);
+  //represent number 13
+  digitalWrite(bit1Pin, HIGH);
+  digitalWrite(bit2Pin, LOW);
+  digitalWrite(bit3Pin, HIGH);
+  digitalWrite(bit4Pin, HIGH);
+  //represent number 14
+  digitalWrite(bit1Pin, LOW);
+  digitalWrite(bit2Pin, HIGH);
+  digitalWrite(bit3Pin, HIGH);
+  digitalWrite(bit4Pin, HIGH);
+  //represent number 15
+  digitalWrite(bit1Pin, HIGH);
+  digitalWrite(bit2Pin, HIGH);
+  digitalWrite(bit3Pin, HIGH);
+  digitalWrite(bit4Pin, HIGH);
+}
